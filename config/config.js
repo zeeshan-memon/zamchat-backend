@@ -9,8 +9,8 @@ var init = () => {
     var config = {
 
         dev: {
-            dbURI: process.env.DB_URI || 'mongodb://localhost/zamchat',
-            port: process.env.PORT || 8000,
+            dbURI: process.env.DB_URI || 'mongodb://freelance:m9MM4QWSpXo9tBN8gI6sKUKN2pVjWqavyZPIuu6NH16mQ5effuUd3Gbd3AzGkzNYjUnwazkFsKgw9QOKuEDTRg==@freelance.mongo.cosmos.azure.com:10255/freelance?ssl=true&retrywrites=false&maxIdleTimeMS=120000&appName=@freelance@',
+            port: process.env.PORT || 3000,
             redisURI: process.env.REDIS_URI || 'www.zamchat.com',
             redisConfig: {
                 host: process.env.hostname,
