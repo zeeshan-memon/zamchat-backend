@@ -1,0 +1,14 @@
+const tokenValidation = require('../helper/middleware').requiresToken;
+const decodeBody = require('../helper/middleware').decodeBody;
+
+module.exports = (app) => {
+  require('./accounts')(app, tokenValidation, decodeBody);
+  require('./charitycategories')(app, tokenValidation, decodeBody);
+  require('./contactus')(app, tokenValidation, decodeBody);
+  require('./scheduling')(app, tokenValidation, decodeBody);
+  require('./states')(app, tokenValidation, decodeBody);
+  require('./cities')(app, tokenValidation, decodeBody);
+  require('./drivers')(app, tokenValidation, decodeBody);
+  require('./routesplan')(app, tokenValidation, decodeBody);
+  require('./stores')(app, tokenValidation, decodeBody);
+}
